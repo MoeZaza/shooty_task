@@ -1,0 +1,28 @@
+[
+    {
+        "id": "PALESTINE",
+        "cities": [
+            "NABLUS",
+            "RAMALLAH"
+        ]
+    },
+    {
+        "id": "JORDAN",
+        "cities": [
+            "AMMAN",
+            "AQABA"
+        ]
+    },
+    {
+        "id": "LEBANON",
+        "cities": [
+            "BEIRUT"        ]
+    },
+    {
+        "id": "SAUDI",
+        "cities": [
+            "JEDDAH",
+            "MECCA"
+        ]
+    }
+]

@@ -1,0 +1,23 @@
+.post {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.thumb {
+    width: 200px;
+    height: 200px;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.w-48{
+    width: 48%;  
+}
+
+.w-50{
+    width: 50%;  
+}

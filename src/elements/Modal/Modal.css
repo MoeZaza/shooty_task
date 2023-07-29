@@ -1,0 +1,43 @@
+.modal-mask {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 310px;
+    background: white;
+    z-index: 10;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.modal header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+} 
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 14px;
+    border-top: 1px solid;
+    width: 95.6%;
+    text-align: right;
+}
