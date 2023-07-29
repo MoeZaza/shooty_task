@@ -24,7 +24,7 @@ function AddPostBtn({savePost}: {savePost: (newPost: IPostProps) => void}) {
                 country: inputs.Country.value
               },
               sector: inputs.Sector.value,
-              id: ""
+              id: Date.now() + ""
           };
           handleClose();
           savePost(newPost);

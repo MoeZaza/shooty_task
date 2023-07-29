@@ -19,29 +19,30 @@ function SearchView(){
 	};
 
 	const handleDelete = (postId: string) => {
-		// let newList = posts.filter((post:IPostProps) => {
-		// 	return post.id !== postId;
-		// });
-		// setPosts(newList);
-        fetch('/jobs', {
-            method: 'delete',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({postId})
-          })
-          .then((response) => response.json())
-          .then((data) => setPosts(data))
-          .catch((error) => console.error('Error fetching jobs:', error));
+		let newList = posts.filter((post:IPostProps) => {
+			return post.id !== postId;
+		});
+		setPosts(newList);
+        // fetch('/jobs', {
+        //     method: 'delete',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify({postId})
+        //   })
+        //   .then((response) => response.json())
+        //   .then((data) => setPosts(data))
+        //   .catch((error) => console.error('Error fetching jobs:', error));
 	};
 
     const handleAdd = async (newPost: IPostProps) => {
-        fetch('/jobs', {
-            method: 'post',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newPost),
-          })
-          .then((response) => response.json())
-          .then((data) => setPosts(data))
-          .catch((error) => console.error('Error fetching jobs:', error));
+        setPosts([newPost, ...posts]);
+        // fetch('/jobs', {
+        //     method: 'post',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(newPost),
+        //   })
+        //   .then((response) => response.json())
+        //   .then((data) => setPosts(data))
+        //   .catch((error) => console.error('Error fetching jobs:', error));
     };
     
 
